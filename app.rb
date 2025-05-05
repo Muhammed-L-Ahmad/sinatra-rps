@@ -3,10 +3,7 @@ require "sinatra/reloader"
 
 get("/") do
   erb(:homepage)
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+ 
 end
 
 get ("/rock") do
@@ -39,6 +36,10 @@ get ("/paper") do
   else
     @outcome = "won"
 
+  end
+
+erb(:paper)
+
 end
 
 get ("/scissors") do
@@ -52,4 +53,8 @@ get ("/scissors") do
     @outcome = "lost"
   else
     @outcome = "won"
+  end
+
+erb(:scissors)
+
 end
