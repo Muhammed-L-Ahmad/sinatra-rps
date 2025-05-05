@@ -12,7 +12,7 @@ get ("/rock") do
 
   moves = ["rock", "paper", "scissors"]
 
-  
+  comp_move = moves.sample
 
 "
   <h2>
